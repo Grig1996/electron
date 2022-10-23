@@ -1,0 +1,383 @@
+@media screen and (max-width:1200px) {
+    .menuNav ul{
+        width: 100%;
+    }
+
+    .head_button{
+        width: 50%;
+        margin-left: 50px;
+    }
+
+    .head_button p{
+        font-size: 12px;
+    }
+
+    .sec2_bodyGlob{
+        width: 90%;
+    }
+
+    .menuNav ul li{
+        margin-left: 25px;
+    }
+
+    .sec1_imgBox{
+        background-position: center;
+    }
+}
+
+@media screen and (max-width:930px){
+    .head_buttonBox{
+        display: none;
+    }
+
+    .head_menuBox{
+        width: 70%;
+    }
+
+    .section4{
+        height: auto;
+        flex-direction: column;
+    }
+
+    .sec4_leftBox{
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-around;
+    }
+
+    .sec4_rightBox{
+        width: 100%;
+        height: 400px;
+    }
+
+    .sec4_title{
+        margin: 0;
+        margin-top: 40px;
+    }
+
+    .sec4_bodyText{
+        margin: 0;
+    }
+
+    .sec4_dawnText{
+        margin: 0;
+        font-size: 10;
+        text-align: center;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .sec4_button{
+        margin: 0;
+    }
+
+    .menuNav ul{
+        justify-content: flex-start;
+    }
+
+    .menuNav ul li{
+        margin-left: 20px;
+    }
+
+    .menuNav ul li a{
+        font-size: 12px;
+    }
+    
+}
+
+@media screen and (min-width:768px) and (max-width:880px) {
+
+    .section2{
+        height: 1000px;
+    }
+
+    .sec2_item1{
+        width: 300px;
+        height: 300px;
+    }
+
+    .sec2_bodyGlob{
+        height: 770px;
+    }
+}
+
+@media screen and (max-width:767px){
+    .menuNav{
+        display: none;
+    }
+
+    .head_menuBox{
+        justify-content: flex-end;
+    }
+
+    .click_menu{
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 50%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        transition: left 0.8s ease 0s;
+        padding: 100px 30px 30px 30px;
+        overflow: auto;
+    }
+
+    .click_menu._active{
+        left: 0;
+    }
+
+    .click_menu::before{
+        content: "";
+        width: 100%;
+        height: 70px;
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        background-color:#181818;
+    }
+
+    .click_menu ul{
+        list-style: none;
+    }
+
+    .click_menu ul li{
+        margin-top: 10px;
+    }
+
+    .click_menu ul li a{
+        color: white;
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .burger_menu{
+        display: block;
+        position: relative;
+        z-index: 5;
+        width: 30px;
+        height: 18px;
+        cursor: pointer;
+        left: -50px;
+    }
+
+    .burger_menu span,
+    .burger_menu::before,
+    .burger_menu::after{
+        position: absolute;
+        left: 0;
+        height: 10%;
+        width: 100%;
+        transition: all 0.3s ease 0s;
+        background-color: white;
+    }
+
+    .burger_menu::before,
+    .burger_menu::after{
+        content: "";
+    }
+    
+    .burger_menu::before{
+        top: 0;
+    }
+
+    .burger_menu::after{
+        bottom: 0;
+    }
+
+    .burger_menu span{
+        top: 50%;
+        transform: scale(1) translate(0px, -50%);
+    }
+
+    .burger_menu._active span{
+        transform: scale(0) translate(0px, -50%);
+    }
+
+    .burger_menu._active::before{
+        top: 50%;
+        transform: rotate(-45deg) translate(0px, -50%);
+    }
+
+    .burger_menu._active::after{
+        top: 50%;
+        transform: rotate(45deg) translate(0px, 50%);
+    }
+
+    .sec1_textDawn p {
+        margin-top: 10px;
+    }
+
+    /* section2 */
+    .section2{
+        height: 2100px;
+    }
+
+    .sec2_body{
+        height: 1900px;
+    }
+
+    .sec2_bodyGlob{
+        height: 1900px;
+    }
+
+    .sec3_buttonsBox{
+        display: none;
+    }
+
+    .slid1_textBox{
+        width: 70%;
+        height: 250px;
+        margin-left: 20px;
+        margin-top: 200px;
+    }
+
+    .sec4_rightBox{
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+    }
+
+    .sec6_imgSize{
+        width: 28%;
+    }
+    
+    .sec6_imgSize2{
+        width: 12%;
+    }
+    
+    .sec6_imgSize3{
+        width: 32%;
+    }
+   
+
+    .section7{
+        justify-content: center;
+        align-items: center;
+        background-position: 80%;
+    }
+
+    .sec7_textBox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+    }
+
+    .section8{
+        height: 200px;
+    }
+
+    .sec8_textTitle{
+        margin-top: 55px;
+    }
+
+    footer {
+        width: 100%;
+        height: 424px;
+        /* border: 1px solid red; */
+    }
+
+    .foot_upBox{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .foot_upRight{
+        width: 90%;
+        justify-content: space-around;
+    }
+
+    .foot_upLeft{
+        width: 90%;
+        height: 180px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .foot_upLeft img{
+        margin: 0;
+    }
+
+    .foot_leftText{
+        margin: 0;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .sec1_imgBox{
+        background-image: url("../img/poster1_mobail.jpg");
+        /* background-position: center; */
+        background-size: cover;
+    }
+
+    .sec1_opasityBox{
+        width: 100%;
+        height: 600px;
+        background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8995973389355743) 1%, rgba(255,255,255,0.0032387955182072714) 100%);
+    }
+}
+
+@media screen and (max-width:450px){
+    .head_logoBox{
+        width: 70%;
+    }
+
+    .click_menu{
+        width: 100%;
+    }
+
+    .sec1_textDawn{
+        width: 99%;
+    }
+
+    .sec1_textDawn p {
+        
+        margin-top: 10px;
+    }
+
+    .sec2_item1{
+        width: 350px;
+        height: 400px;
+    }
+
+    .sec1_textBody p {
+        font-size: 30px;
+    }
+
+    .slid1{
+        background-position: 75%;
+        background-size: 310%;
+        background-repeat: no-repeat;
+    }
+
+    .slid2{
+        background-position: 65%;
+        background-size: 310%;
+        background-repeat: no-repeat;
+    }
+
+    .slid3{
+        background-position: 25%;
+        background-size: 310%;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (max-width:320px){
+    .click_menu{
+        width: 100%;
+    }
+
+    .sec1_textBody p {
+        font-size: 30px;
+    }
+}

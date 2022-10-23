@@ -1,0 +1,790 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar{
+    width: 4px;
+    
+    background-color: rgb(41, 41, 41);
+    
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #C0C0C0;
+    border-radius: 8px;
+    
+}
+
+body{
+    background-color: black;
+}
+
+body._lock{
+    overflow: hidden;
+}
+
+.header{
+    width: 100%;
+    height: 70px;
+    /* border: 1px solid red; */
+    background-color: #181818;
+    display: flex;
+}
+
+.altHeader{
+    width: 100%;
+    height: 70px;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border: none;
+    animation: 1.5s headdown;
+    margin-top:0; 
+  }
+  
+  @keyframes headdown{
+    0%{
+      top: -1200px;
+    }
+    100%{
+      top: 0;
+    }
+  }
+
+  .head_logoBox{
+    width: 30%;
+    height: 70px;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.head_logoCount{
+    width: 200px;
+    height: 100%;
+    /* border: 1px solid red; */
+    background-image: url(../img/electroLogo.svg);
+    background-size: 75%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.head_logoCount a{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+
+.silkBox{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+
+.head_menuBox{
+    width: 70%;
+    height: 70px;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.burger_menu{
+    display: none;
+}
+
+.click_menu{
+    display: none;
+}
+
+.menuNav{
+    width: 100%;
+    height: 30px;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    /* justify-content: flex-end; */
+}
+
+.menuNav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* border: 1px solid red; */
+}
+
+.menuNav ul li{
+    margin-left: 40px;
+    margin-top: 5px;
+    /* border: 1px solid red; */
+}
+
+.menuNav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+.menuNav ul li a:hover{
+    color: rgb(170, 170, 170);
+}
+
+.head_buttonBox{
+    width: 20%;
+    height: 70px;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.head_button{
+    width: 40%;
+    height: 32px;
+    /* border: 1px solid red; */
+    background-color: #fff;
+    border-radius: 11px;
+}
+
+.head_button a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.head_button p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #000;
+}
+/* ======compSec1==== */
+
+.compSec1_counteiner{
+    width: 100%;
+    height: 580px;
+    position: relative;
+}
+
+.compSec1{
+    width: 100%;
+    height: 580px;
+    /* border: 1px solid red; */
+    display: flex;
+    scroll-snap-type: x mandatory;
+    overflow: auto;   
+    position: relative;
+    /* background-attachment: fixed; */
+}
+
+.compSec1::-webkit-scrollbar {
+    display: none;
+  }
+
+.compSec1_globImg{
+    min-width: 100%;
+    height: 580px;
+    /* border: 1px solid red; */
+    scroll-snap-align: start;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    /* transform: scale(1); */
+    display: flex;
+    
+}
+
+.CompSlid1{
+    background-image: url("../computers_img/slid1.jpg");
+    
+}
+/*  */
+
+.sec1_slid1_title{
+    width: 50%;
+    height: 570px;
+    /* border: 1px solid red; */
+    margin-left: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sec1_slid1BigText{
+    width: 100%;
+    height: 150px;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: flex-end;
+}
+
+.sec1_slid1BigText p{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: 35px;
+    line-height: 35px;
+    text-shadow: 2px 2px 2px #000000;       
+}
+
+.sec1_slid1Items{
+    width: 100%;
+    height: 270px;
+    /* border: 1px solid rgb(28, 199, 221); */
+    margin-top: 20px;
+}
+
+.sec1_slid1ItemsBox{
+    width: 100%;
+    height: 30px;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+}
+
+.sec1_slid1ItemsBox img{
+    width: 35px;
+    height: 35px;
+}
+
+.sec1_slid1ItemsBox P{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    
+}
+
+.CompSlid2{
+    background-image: url("../computers_img/slid2.jpg");
+    background-position: 60%;
+}
+
+.sec1_slid2Title{
+    width: 50%;
+    height: 550px;
+    /* border: 1px solid red; */
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.sec1_slid2BigText{
+    width: 100%;
+    height: 90px;
+    /* border: 1px solid red; */
+    
+}
+
+.sec1_slid2BigText p{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: 35px;
+    line-height: 35px;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+.sec1_slid2Icons{
+    width: 100%;
+    height: 150px;
+    /* border: 1px solid red; */
+    display: flex;
+}
+
+.sec1_slid2Partners{
+    width: 20%;
+    height: 100px;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+}
+
+.sec1_slid2Partners img{
+    width: 80px;
+    height: 55px;
+}
+
+.partner1 img{
+    width: 50px;
+}
+
+.partner1{
+    width: 100%;
+    height: 55px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+}
+
+.partner1_text{
+    width: 100%;
+    height: 50px;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.partner1_text p{
+    color: #fff;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.partner1_text p span{
+    color: #76B900;
+}
+
+.partner2{
+    width: 100%;
+    height: 55px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partner2_text{
+    width: 100%;
+    /* height: 45px; */
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.partner2_text p{
+    color: #fff;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.partner2_text p span{
+    color: #006DBF;
+    font-size: 13px;
+}
+
+.partner3{
+    width: 100%;
+    height: 55px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partner3_text{
+    width: 100%;
+    height: 45px;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.partner3_text p{
+    color: #fff;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.partner3_text p span{
+    color: #F7D000;
+    font-size: 13px;
+}
+
+.partner2 img{
+    width: 50px;
+    height: 40px;
+}
+.CompSlid3{
+    background-image: url("../computers_img/slid3.jpg");
+    
+    
+}
+
+.sec1_slid3Title{
+    width: 40%;
+    height: 500px;
+    /* border: 1px solid red; */
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.slid3_bigText{
+    width: 100%;
+    height: 100px;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slid3_bigText img{
+    width: 300px;
+    height: 200px;
+}
+
+.slid3_infoText{
+    width: 100%;
+    height: 130px;
+    /* border: 1px solid red; */
+}
+
+.slid3_infoText p{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+}
+
+.slid3_infoText p span{
+    color: #76B701;
+    font-size: 15px;
+}
+
+.compSec1_buttonsBox{
+    width: 100%;
+    height: 50px;
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.rightbtn{
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.rightbtn img{
+    width: 30px;
+    opacity: 0.5;
+}
+
+.leftbtn{
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.leftbtn img{
+    width: 30px;
+    opacity: 0.5;
+}
+
+.compSec2{
+    width: 100%;
+    /* border: 1px solid red; */
+}
+
+.compSec2_basketBox{
+    width: 100%;
+    height: 70px;
+    /* border: 1px solid red; */
+    display: flex;
+}
+
+.compSec2_basketText{
+    width: 25%;
+    height: 70px;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.compSec2_basketText p{
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.compSec2_basketSearch{
+    width: 50%;
+    height: 70px;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.basketSearchLine{
+    width: 70%;
+    height: 40px;
+    border: 1px solid rgb(151, 151, 151);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.basketSearchLine input{
+    width: 70%;
+    height: 30px;
+    background-color: #000;
+    border-radius: 30px 0px 0px 30px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    color: #fff;
+}
+
+.basketSearchLine button{
+    width: 26%;
+    height: 28px;
+    border: 1px solid rgb(151, 151, 151);
+    border-radius: 30px 30px 30px 30px;
+    background-color: #000;
+    color: rgb(146, 146, 146);
+    cursor: pointer;
+}
+
+.compSec2_basketBuy{
+    width: 25%;
+    height: 70px;
+    /* border: 1px solid red; */
+    display: flex;
+}
+
+.basketBuyText{
+    width: 50%;
+    height: 70px;
+    /* border: 1px solid red; */
+}
+
+.basketIcon{
+    width: 25%;
+    height: 70px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.basketIconBlock{
+    width: 50px;
+    height: 50px;
+    /* border: 1px solid red; */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.basketIconBlock:hover{
+    transform: rotate(10deg);
+}
+
+.basketIconBlock img{
+    width: 40px;
+    height: 40px;
+}
+
+.basketLikeBlock{
+    width: 25%;
+    height: 70px;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+   
+}
+
+.basketLikeIcon{
+    width: 50px;
+    height: 50px;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.basketLikeIcon:hover{
+    transform: rotate(10deg);
+}
+
+.basketLikeIcon img{
+    width: 40px;
+    height: 40px;
+}
+
+
+.basketMenuBlock{
+    width: 0%;
+    height: 0px;
+    background-color: #fff;
+    position: absolute;
+    left: 1220px;
+    transition: .5s;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.basketActvie{
+    width: 80%;
+    height: 500px;
+    left: 200px;
+}
+
+
+
+.basketTriangle{
+    width: 15px;
+    height: 15px;
+    background-color: #ffffff;
+    position: absolute;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    top: 70px;
+    left: 44%;
+    transition: 0.3s;
+    opacity: 0;
+}
+.basketTriangleActive{
+  opacity: 1;
+  top: 59px;
+}
+
+.basketIconBlock:hover .basketTriangle{
+    transform: rotate(-10deg);
+}
+
+.compSec2_productsBox{
+    width: 100%;
+    height: 700px;
+    /* border: 1px solid red; */
+    position: relative;
+}
+
+.compSec2_ProductItems{
+    width: 100%;
+    height: 300px;
+    /* border: 1px solid red; */
+    display: flex;
+}
+
+.productItems{
+    width: 20%;
+    height: 300px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.caseImgRam{
+    width: 90%;
+    height: 230px;
+    /* border: 1px solid red; */
+    /* background-image: url(../img/case1.png); */
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.caseTextBox{
+    width: 100%;
+    height: 50px;
+    /* border: 1px solid red; */
+    display: flex;
+}
+
+.caseName{
+    width: 30%;
+    height: 50px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caseName p{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+}
+
+.caseQuantity{
+    width: 40%;
+    height: 50px;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caseQuantity button{
+    width: 30px;
+    height: 40px;
+}
+
+.caseQuantity span{
+    color: #fff;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.caseAdd{
+    width: 30%;
+    height: 50px;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+}
+
+.caseAdd button{
+    width: 90%;
+    height: 30px;
+    background-color: #006DBF;
+    cursor: pointer;
+}

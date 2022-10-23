@@ -1,0 +1,113 @@
+@media screen and (max-width: 900px) {
+    .sec1_slid1_title{
+        width: 80%;
+        margin-left: 50px;
+        height: 400px;
+    }
+
+    .CompSlid1{
+        background-position: 70%;
+        
+    }
+
+    .sec1_slid1BigText p{
+        font-size: 30px;
+    }
+
+    .compSec1_buttonsBox{
+        display: none;
+    }
+
+    .sec1_slid2Title{
+        width: 100%;
+        margin-left: 10px;
+        margin-top: 250px;
+        height: 300px;
+    }
+
+    .sec1_slid3Title{
+        width: 65%;
+        margin-left: 20px;
+       
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .sec1_slid1_title{
+        width: 100%;
+        margin-left: 20px;
+        margin-top: 130px;
+        height: 400px;
+    
+    }
+
+  
+
+
+    .CompSlid1{
+        background-position: 60%;
+        transform: scale(1);
+        
+    }
+
+    .CompSlid2{
+        background-position: 56%;
+        transform: scale(1);
+    }
+
+    .sec1_slid2BigText{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sec1_slid2BigText p{
+        font-size: 23px;
+        line-height: 25px;
+        margin-top: 70px;
+    }
+    .sec1_slid2Partners{
+        width: 50%;
+    }
+
+    .sec1_slid2Icons{
+        align-items: flex-end;
+    }
+
+    .sec1_slid3Title{
+        width: 100%;
+        margin-left: 0;
+        justify-content: flex-start;
+    }
+
+    .slid3_infoText{
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+
+    .slid3_infoText p{
+        text-shadow: 2px 2px 2px #000000;
+
+    }
+
+    .CompSlid3{
+        transform: scale(1);
+        background-position: 60%;
+    }
+}
+
+@media screen and (max-width: 480px){
+   
+
+    .sec1_slid1BigText p{
+        font-size: 23px;
+    }
+
+    .sec1_slid1BigText p{
+        text-shadow: 2px 2px 2px #000000;
+    }
+
+    .sec1_slid1ItemsBox P{
+        text-shadow: 2px 2px 2px #000000;
+    }
+} 

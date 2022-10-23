@@ -1,0 +1,15 @@
+{
+    "computer1":{
+        "name":"computer1Name",
+        "desc":"computer1Desc",
+        "price":"computer1Price",
+        "photo":"img/case1.png"
+    },
+    
+    "computer2":{
+        "name":"computer2Name",
+        "desc":"computer2Desc",
+        "price":"computer2Price",
+        "photo":"img/case1.png"
+    }
+}
